@@ -11,8 +11,8 @@ URL_ESAJ_LOGIN_CAS = os.getenv(
     'https://esaj.tjsp.jus.br/sajcas/login?service=https%3A%2F%2Fesaj.tjsp.jus.br%2Fesaj%2Fportal.do%3Fservico%3D740000'
 )
 # É ALTAMENTE RECOMENDADO colocar usuário e senha do eSAJ no arquivo .env
-ESAJ_USER = os.getenv("ESAJ_USER", "SEU_USUARIO_ESAJ_AQUI")  # Ex: '31157500803'
-ESAJ_PASS = os.getenv("ESAJ_PASS", "SUA_SENHA_ESAJ_AQUI")    # Ex: 'AUTOMATIZACAO01'
+ESAJ_USER = os.getenv("ESAJ_USER", "SEU_USUARIO_ESAJ_AQUI")  # Ex: ''
+ESAJ_PASS = os.getenv("ESAJ_PASS", "SUA_SENHA_ESAJ_AQUI")    # Ex: ''
 
 # --- Configurações para Ler o Token do Yahoo Mail ---
 YAHOO_EMAIL_ADDRESS = os.getenv("YAHOO_EMAIL_ADDRESS")
@@ -70,4 +70,5 @@ ARQUIVO_LOG_ESAJ_PROCESSADOS = os.getenv(
 # print(f"DEBUG config.py: Email Yahoo: {YAHOO_EMAIL_ADDRESS}")
 # print(f"DEBUG config.py: Pasta Download eSAJ: {PASTA_DOWNLOAD_ESAJ}")
 # print(f"DEBUG config.py: Planilha Processos eSAJ: {CAMINHO_PLANILHA_PROCESSOS_ESAJ}")
+
 # print(f"DEBUG config.py: Tipos de Documento eSAJ: {TIPOS_DOCUMENTO_DESEJADOS_ESAJ}")
